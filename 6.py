@@ -1,8 +1,8 @@
 array = input('Введите массив: ').split()
 delta = int(input('Введите число DELTA: '))
-min_elem = 10 ** 100
+min_elem = int(array[0])
 count = 0
-for i in range(len(array)):
+for i in range(1, len(array)):
     array[i] = int(array[i])
 for elem in array:
     if int(elem) < min_elem:
